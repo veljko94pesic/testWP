@@ -19,12 +19,12 @@ CREATE TABLE `wp_revisr` (
   `event` varchar(42) NOT NULL,
   `user` varchar(60) DEFAULT NULL,
   UNIQUE KEY `id` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 LOCK TABLES `wp_revisr` WRITE;
 /*!40000 ALTER TABLE `wp_revisr` DISABLE KEYS */;
-INSERT INTO `wp_revisr` VALUES (1,'2017-08-08 11:40:53','Successfully created a new repository.','init','root'),(2,'2017-08-08 11:43:07','There was an error committing the changes to the local repository.','error','root');
+INSERT INTO `wp_revisr` VALUES (1,'2017-08-08 11:40:53','Successfully created a new repository.','init','root'),(2,'2017-08-08 11:43:07','There was an error committing the changes to the local repository.','error','root'),(3,'2017-08-08 11:56:09','Successfully backed up the database.','backup','root'),(4,'2017-08-08 11:56:12','Committed <a href=\"http://testwp.dev/wp-admin/admin.php?page=revisr_view_commit&commit=2cdfedb&success=true\">#2cdfedb</a> to the local repository.','commit','root'),(5,'2017-08-08 11:56:13','Error pushing changes to the remote repository.','error','root'),(6,'2017-08-08 12:06:53','Error pushing changes to the remote repository.','error','root');
 /*!40000 ALTER TABLE `wp_revisr` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
